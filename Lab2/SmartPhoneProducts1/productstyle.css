@@ -4,12 +4,21 @@ body {
     margin: 0 auto;
 }
 
+p {
+    text-align: center;
+    font: "Times";
+}
 
 h1,h2 {
     text-align: center;
+    color: green
 }
-s
+
 img {
+    display: block;
+    border: 1px solid #ddd;
+    border-radius: 10 px;
+    margin-left: auto;
     height: 200px;
     width: 200px;
 }
