@@ -1,13 +1,19 @@
 body {
     width: 800 px;
     margin: 0 auto;
+    background: rgb(158, 26, 52);
+    text-align: center;
 }
 
 h1 {
-    color: red;
+    color: silver;
     align: center;
 }
 
-h2, h3 {
-    color: red;
+}
+
+img {
+    align: center;
+    border: 5px solid silver;
+    border-radius: 10 px;
 }
