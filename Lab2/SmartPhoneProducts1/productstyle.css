@@ -16,14 +16,23 @@ main {
 
 p {
     text-align: center;
-    color: rgba(187, 78, 214, 0.747);
+    color: rgba(230, 197, 238, 0.747);
+    font-size: 15 px;
     font-family: Arial, Helvetica, sans-serif
 
 }
 
-h1,h2 {
+h1 {
     text-align: center;
-    color: rgb(187, 78, 214);
+    color: rgb(185, 62, 216);
+    font-size: 30 px;
+    font-family: Arial, Helvetica, sans-serif
+}
+
+h2 {
+    text-align: center;
+    color: rgb(172, 98, 190);
+    font-size: 20 px;
     font-family: Arial, Helvetica, sans-serif
 }
 
@@ -34,6 +43,10 @@ img {
     margin-left: auto;
     height: 200px;
     width: 200px;
+}
+
+img:hover {
+    box-shadow: 0 0 5px 1px rgb(141, 68, 141);
 }
 
 div {
