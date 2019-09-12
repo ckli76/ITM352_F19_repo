@@ -1,24 +1,41 @@
 body {
-    background-image: "phone_globe.jpg";
+    background-image: url(/Lab2/SmartPhoneProducts1/images/neo_phone.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
     width: 800px;
     margin: 0 auto;
 }
 
+main {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
 p {
     text-align: center;
-    font: "Times";
+    color: rgba(187, 78, 214, 0.747);
+    font-family: Arial, Helvetica, sans-serif
+
 }
 
 h1,h2 {
     text-align: center;
-    color: green
+    color: rgb(187, 78, 214);
+    font-family: Arial, Helvetica, sans-serif
 }
 
 img {
     display: block;
-    border: 1px solid #ddd;
+    border: 5px solid rgb(82, 23, 100);
     border-radius: 10 px;
     margin-left: auto;
     height: 200px;
     width: 200px;
+}
+
+div {
+    display: flex;
 }
