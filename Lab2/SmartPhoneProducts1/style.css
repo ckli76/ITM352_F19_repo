@@ -6,14 +6,11 @@ body {
 }
 
 h1 {
-    color: silver;
-    align: center;
+    color: silver; 
 }
 
-}
 
 img {
-    align: center;
     border: 5px solid silver;
     border-radius: 10 px;
 }
