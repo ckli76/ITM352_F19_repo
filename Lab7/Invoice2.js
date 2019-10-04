@@ -40,7 +40,7 @@ if (subtotal >= 25 && subtotal <= 50) {
             shipping = 7.99
         };
 
-var grandtotal = (Number(subtotal) + Number(salestax)).toFixed(2)
+var grandtotal = (Number(subtotal) + Number(salestax + Number(shipping))).toFixed(2)
 
 document.write("Item: " + item1 + "<br>" + "Quantity: " + quantity1 + "<br>" + "Price: $" + price1 + "<br>" + "Extended Price: $" + extended_price1 + "<br>" + "<br>");
 
