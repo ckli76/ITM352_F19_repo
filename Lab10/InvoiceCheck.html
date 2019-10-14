@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <table border='1'>
+            <tbody>
+    <script>
+        var product_quantities = [11, 3, 2, 5, 1];
+        var outstring = "<tr><th>Product#</th><th>Quantity</th></tr>";
+
+for (i = 0; i < product_quantities.length; i++)
+                {
+                    productNum = i + 1
+                    outstring += `<tr><td>${productNum}</td><td>${product_quantities[i]}</td>)</tr>`
+                };
+                document.write(outstring);
+        </script>
+        </tbody>
+         </table>
+</body>
+</html>
