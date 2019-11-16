@@ -1,35 +1,19 @@
+  
 var express = require('express');
 var app = express();
 var myParser = require("body-parser");
 
-function isNonNegInt(q, returnErrors = false) {
-    errors = []; // assume no errors at first
-    if (Number(q) != q) errors.push('Not a number!'); // Check if string is a number value
-    if (q < 0) errors.push('Negative value!'); // Check if it is non-negative
-    if (parseInt(q) != q) errors.push('Not an integer!'); // Check that it is an integer
-    return returnErrors ? errors : (errors.length == 0);
-}
-
 app.all('*', function (request, response, next) {
-    console.log(request.method + ' to ' + request.path);
-    next();
+    console.log(request.method + ' to ' + request.path); // browser make request
+    next(); // if have file, send response with that file
 });
 
-app.use(myParser.urlencoded({ extended: true }));
-app.post("/process_form", function (request, response) {
-    let POST = request.body;
-    // response.send(POST);
-
-    if (typeof POST['quantity_textbox'] != 'undefined') {
-        userIn = POST['quantity_textbox'];
-        if (isNonNegInt(userIn)) {
-            respond.send(`Thank you for purchassing ${userIn} items`);
-        }
-        else {
-            response.send(`${userIn} is not a quantity! Press the back button and try again.`)
-        }
-    }
+//server-side code only, do not do inside html file
+app.use(myParser.urlencoded({ extended: true })); //need to install Parser, becomes an object, urlencoded is a method of myParser; when get HTML body, will turn it into a clean body to use
+app.post("/process_form", function (request, response) { //if I get a post, if has process_form in the path, do this
+   let POST = request.body; //data sent with the request
+   response.send(POST); //sending object back
 });
 
-app.use(express.static('./public'));
+app.use(express.static('./public')); // another method of express. express.static creates static webserver. Create middleware. have method called static and has directory that will respond to GET request, get file from wherever and send it back, set up static webserver; can still serve static files
 app.listen(8080, () => console.log(`listening on port 8080`));

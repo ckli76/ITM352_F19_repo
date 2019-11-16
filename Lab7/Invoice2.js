@@ -29,6 +29,7 @@ var subtotal = extended_price1 + extended_price2 + extended_price3 + extended_pr
 var taxrate = 0.0575;
 var taxpercent = "5.75" + "%";
 var salestax = (subtotal * taxrate).toFixed(2);
+
 var shipping = 1.99
 if (subtotal >= 25 && subtotal <= 50) {
     shipping = 2.99;
