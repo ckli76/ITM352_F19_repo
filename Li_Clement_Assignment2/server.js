@@ -50,7 +50,7 @@ app.get('/purchase', function (req, res, next) {
         if (ExistErrors || total_quantity == 0) {
             res.redirect('products_display.html?' + qs.stringify(purchase_data));
         } else { // all good to go!
-            res.redirect('login.html');
+            res.redirect('./login.html');
         }
 
     }
@@ -81,7 +81,7 @@ app.post("/login", function (request, response) {
         if (users_reg_data[the_username].password == the_password)
             response.redirect('/invoice.html?' + qs.stringify(purchase_data));
     } else {
-        response.redirect('login.html');
+        response.redirect('./login.html');
     }
 }
 );
@@ -166,7 +166,7 @@ app.post("/register", function (request, response) {
         response.redirect('/invoice.html?' + qs.stringify(purchase_data));
     }
     else {
-        response.redirect('registration.html');
+        response.redirect('./registration.html');
     }
 
 });
