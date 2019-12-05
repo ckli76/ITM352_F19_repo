@@ -1,0 +1,132 @@
+ /* General */
+ 
+
+html {
+  
+  font-family: 'Helvetica Neue', sans-serif;
+  
+}
+
+/* body {
+  width: 800px;
+  margin: 0 auto;
+  background-image: url("https://media.giphy.com/media/xUA7aXlhmKHBNLH3jy/giphy.gif");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  width: 800px;
+  margin: 0 auto;
+} */
+
+/* Typography */
+
+
+h1, h2 {
+  
+  font-family: 'Helvetica Neue', sans-serif;
+  margin: 0;
+  font-size: 30px;
+  color: green;
+  text-align: center;
+}
+
+/* Table Style */
+table {
+  font-family: 'Helvetica Neue', sans-serif;
+  font-size: 25px;
+  color: greenyellow;
+  border: 1px solid black;
+  background-image: url(https://images.unsplash.com/photo-1536147116438-62679a5e01f2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80);
+}
+
+/* Images Styling */
+img {
+  display: block;
+  border: 5px solid rgb(50, 196, 140);
+  border-radius: 10 px;
+}
+
+/* Inputs Purchase Styling */
+
+body{
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background: url("https://media.giphy.com/media/xUA7aXlhmKHBNLH3jy/giphy.gif") no-repeat;
+  background-size: cover;
+}
+
+.login-box{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 400px;
+  padding: 40px;
+  background: rgba(255, 255, 255, 0.75);
+  box-sizing: border-box;
+  box-shadow: 0 15px 25px rgba(0,0,0,.5);
+  border-radius: 10px;
+}
+
+.login-box{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 400px;
+  padding: 40px;
+  background: rgba(255, 255, 255, 0.75);
+  box-sizing: border-box;
+  box-shadow: 0 15px 25px rgba(0,0,0,.5);
+  border-radius: 10px;
+}
+
+.textbox{
+  width: 100%;
+  overflow: hidden;
+  font-size: 20px;
+  padding: 8px 0;
+  margin: 8px 0;
+  border-bottom: 1.5px solid #4caf4f73;
+}
+
+.textbox input{
+  border: none;
+  outline: none;
+  background: none;
+  color: rgb(0, 0, 0);
+  font-size: 18px;
+  width: 80%;
+  float: left;
+  margin: 0 10px;
+}
+input[type=submit] {
+  background: transparent;
+  border: none;
+  outline: none;
+  color: #fff;
+  background: #038103;
+  padding: 10px 30px;
+  cursor: pointer;
+  border-radius: 5px;
+  margin: 5px 0;
+  text-align: center;
+}
+
+.submit_button
+{
+  text-align: center;
+}
+
+.message
+{
+  text-align: center;
+  color: #646464;
+}
+
+.a:link
+{
+  color: #646464;
+}
